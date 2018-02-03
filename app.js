@@ -38,7 +38,7 @@ page.open(url, 'post', {
 						}
 						// Aca es donde selecciono el/los botones para clickear
 						page2.evaluate(function() {
-							$('input[value="Vote Now!"]').eq(2).click()
+							$('input[value="Vote Now!"]').eq(0).click()
 						})
 						
 					})
@@ -46,9 +46,143 @@ page.open(url, 'post', {
 				}, 1000)
 				i++
 			
-			} else {
+			} else 
 				//phantom.exit()
-			}
+				if (i === 1) {
+					// saco capura lo que esta haciendo el navegador
+					page.render('after.png');
+	
+					// Le digo que espere y ejecute la segunda pagina (para votar)
+					setTimeout(function() {
+						// Abro otro navegador
+						var page2 = require('webpage').create();
+	
+						page2.open('https://www.dragonmuonline.com/index.php?page_id=user_cp&panel=votecredits', function() {
+							page2.injectJs('jquery.min.js');
+							page2.onLoadFinished = function(status) {
+								// saco capura lo que esta haciendo el navegador
+								page2.render('test.png')
+								
+							}
+							// Aca es donde selecciono el/los botones para clickear
+							page2.evaluate(function() {
+								$('input[value="Vote Now!"]').eq(1).click()
+							})
+							
+						})
+					
+					}, 1000)
+					i++
+				
+				} else
+				if (i === 2) {
+					// saco capura lo que esta haciendo el navegador
+					page.render('after.png');
+	
+					// Le digo que espere y ejecute la segunda pagina (para votar)
+					setTimeout(function() {
+						// Abro otro navegador
+						var page2 = require('webpage').create();
+	
+						page2.open('https://www.dragonmuonline.com/index.php?page_id=user_cp&panel=votecredits', function() {
+							page2.injectJs('jquery.min.js');
+							page2.onLoadFinished = function(status) {
+								// saco capura lo que esta haciendo el navegador
+								page2.render('test.png')
+								
+							}
+							// Aca es donde selecciono el/los botones para clickear
+							page2.evaluate(function() {
+								$('input[value="Vote Now!"]').eq(2).click()
+							})
+							
+						})
+					
+					}, 1000)
+					i++
+				
+				} else
+				if (i === 3) {
+					// saco capura lo que esta haciendo el navegador
+					page.render('after.png');
+	
+					// Le digo que espere y ejecute la segunda pagina (para votar)
+					setTimeout(function() {
+						// Abro otro navegador
+						var page2 = require('webpage').create();
+	
+						page2.open('https://www.dragonmuonline.com/index.php?page_id=user_cp&panel=votecredits', function() {
+							page2.injectJs('jquery.min.js');
+							page2.onLoadFinished = function(status) {
+								// saco capura lo que esta haciendo el navegador
+								page2.render('test.png')
+								
+							}
+							// Aca es donde selecciono el/los botones para clickear
+							page2.evaluate(function() {
+								$('input[value="Vote Now!"]').eq(3).click()
+							})
+							
+						})
+					
+					}, 1000)
+					i++
+				
+				} else
+				if (i === 4) {
+					// saco capura lo que esta haciendo el navegador
+					page.render('after.png');
+	
+					// Le digo que espere y ejecute la segunda pagina (para votar)
+					setTimeout(function() {
+						// Abro otro navegador
+						var page2 = require('webpage').create();
+	
+						page2.open('https://www.dragonmuonline.com/index.php?page_id=user_cp&panel=votecredits', function() {
+							page2.injectJs('jquery.min.js');
+							page2.onLoadFinished = function(status) {
+								// saco capura lo que esta haciendo el navegador
+								page2.render('test.png')
+								
+							}
+							// Aca es donde selecciono el/los botones para clickear
+							page2.evaluate(function() {
+								$('input[value="Vote Now!"]').eq(4).click()
+							})
+							
+						})
+					
+					}, 1000)
+					i++
+				
+				} else
+				if (i === 5) {
+					// saco capura lo que esta haciendo el navegador
+					page.render('after.png');
+	
+					// Le digo que espere y ejecute la segunda pagina (para votar)
+					setTimeout(function() {
+						// Abro otro navegador
+						var page2 = require('webpage').create();
+	
+						page2.open('https://www.dragonmuonline.com/index.php?page_id=user_cp&panel=votecredits', function() {
+							page2.injectJs('jquery.min.js');
+							page2.onLoadFinished = function(status) {
+								// saco capura lo que esta haciendo el navegador
+								page2.render('test.png')
+								
+							}
+							// Aca es donde selecciono el/los botones para clickear
+							page2.evaluate(function() {
+								$('input[value="Vote Now!"]').eq(5).click()
+							})
+							
+						})
+					
+					}, 1000)
+					i++
+				
+				}
 		};
 
 		// Con jquery submiteo el formulario de login
