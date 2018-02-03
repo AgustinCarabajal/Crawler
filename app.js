@@ -22,7 +22,7 @@ page.open(url, 'post', {
 	
 			if (i === 0) {
 				// saco capura lo que esta haciendo el navegador
-				page.render('after.png');
+				// page.render('after.png');
 
 				// Le digo que espere y ejecute la segunda pagina (para votar)
 				setTimeout(function() {
@@ -33,7 +33,7 @@ page.open(url, 'post', {
 						page2.injectJs('jquery.min.js');
 						page2.onLoadFinished = function(status) {
 							// saco capura lo que esta haciendo el navegador
-							page2.render('test.png')
+							// page2.render('test.png')
 							
 						}
 						// Aca es donde selecciono el/los botones para clickear
@@ -50,7 +50,7 @@ page.open(url, 'post', {
 				//phantom.exit()
 				if (i === 1) {
 					// saco capura lo que esta haciendo el navegador
-					page.render('after.png');
+					// page.render('after.png');
 	
 					// Le digo que espere y ejecute la segunda pagina (para votar)
 					setTimeout(function() {
@@ -61,7 +61,7 @@ page.open(url, 'post', {
 							page2.injectJs('jquery.min.js');
 							page2.onLoadFinished = function(status) {
 								// saco capura lo que esta haciendo el navegador
-								page2.render('test.png')
+								// page2.render('test.png')
 								
 							}
 							// Aca es donde selecciono el/los botones para clickear
@@ -77,7 +77,7 @@ page.open(url, 'post', {
 				} else
 				if (i === 2) {
 					// saco capura lo que esta haciendo el navegador
-					page.render('after.png');
+					// page.render('after.png');
 	
 					// Le digo que espere y ejecute la segunda pagina (para votar)
 					setTimeout(function() {
@@ -88,7 +88,7 @@ page.open(url, 'post', {
 							page2.injectJs('jquery.min.js');
 							page2.onLoadFinished = function(status) {
 								// saco capura lo que esta haciendo el navegador
-								page2.render('test.png')
+								// page2.render('test.png')
 								
 							}
 							// Aca es donde selecciono el/los botones para clickear
@@ -104,7 +104,7 @@ page.open(url, 'post', {
 				} else
 				if (i === 3) {
 					// saco capura lo que esta haciendo el navegador
-					page.render('after.png');
+					// page.render('after.png');
 	
 					// Le digo que espere y ejecute la segunda pagina (para votar)
 					setTimeout(function() {
@@ -115,7 +115,7 @@ page.open(url, 'post', {
 							page2.injectJs('jquery.min.js');
 							page2.onLoadFinished = function(status) {
 								// saco capura lo que esta haciendo el navegador
-								page2.render('test.png')
+								// page2.render('test.png')
 								
 							}
 							// Aca es donde selecciono el/los botones para clickear
@@ -131,7 +131,7 @@ page.open(url, 'post', {
 				} else
 				if (i === 4) {
 					// saco capura lo que esta haciendo el navegador
-					page.render('after.png');
+					// page.render('after.png');
 	
 					// Le digo que espere y ejecute la segunda pagina (para votar)
 					setTimeout(function() {
@@ -142,7 +142,7 @@ page.open(url, 'post', {
 							page2.injectJs('jquery.min.js');
 							page2.onLoadFinished = function(status) {
 								// saco capura lo que esta haciendo el navegador
-								page2.render('test.png')
+								// page2.render('test.png')
 								
 							}
 							// Aca es donde selecciono el/los botones para clickear
@@ -158,7 +158,7 @@ page.open(url, 'post', {
 				} else
 				if (i === 5) {
 					// saco capura lo que esta haciendo el navegador
-					page.render('after.png');
+					// page.render('after.png');
 	
 					// Le digo que espere y ejecute la segunda pagina (para votar)
 					setTimeout(function() {
@@ -169,7 +169,7 @@ page.open(url, 'post', {
 							page2.injectJs('jquery.min.js');
 							page2.onLoadFinished = function(status) {
 								// saco capura lo que esta haciendo el navegador
-								page2.render('test.png')
+								// page2.render('test.png')
 								
 							}
 							// Aca es donde selecciono el/los botones para clickear
@@ -194,7 +194,7 @@ page.open(url, 'post', {
 		});
 
 		// saco capura lo que esta haciendo el navegador
-		page.render('before.png')
+		// page.render('before.png')
 });
 
 
